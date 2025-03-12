@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
 import "./Contact.css";
-import { Fade, Rotate } from "react-awesome-reveal";
+import { Rotate } from "react-awesome-reveal";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Contact = () => {
