@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import "./Contact.css";
 import { Rotate } from "react-awesome-reveal";
-import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsTwitterX, BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Contact = () => {
   const [name, setname] = useState("");
@@ -17,11 +17,14 @@ const Contact = () => {
       if (!name || !email || !msg) {
         toast.error("PLease Provide all fields");
       }
-      const res = await axios.post("/api/v1/portfolio/sendEmail", {
-        name,
-        email,
-        msg,
-      });
+      const res = await axios.post(
+        "https://email-feature.vercel.app/api/v1/portfolio/sendEmail",
+        {
+          name,
+          email,
+          msg,
+        }
+      );
       //validation success
       if (res.data.success) {
         toast.success(res.data.message);
@@ -61,9 +64,32 @@ const Contact = () => {
                     <div className="row">
                       <h6>
                         Contact With
-                        <BsLinkedin color="blue" size={30} className="ms-2" />
-                        <BsGithub color="black" size={30} className="ms-2" />
-                        <BsFacebook color="blue" size={30} className="ms-2" />
+                        <a
+                          href="https://www.linkedin.com/in/pranjalt363/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <BsLinkedin size={30} className="ms-2" />
+                        </a>
+                        <a
+                          href="https://github.com/PranjalScripts"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {" "}
+                          <BsGithub color="black" size={30} className="ms-2" />
+                        </a>
+                        
+                        <a href="http://x.com/p_tiwari_p"
+                          target="_blank"
+                        rel="noopener noreferrer">
+                          {" "}
+                          <BsTwitterX
+                            color="black"
+                            size={30}
+                            className="ms-2"
+                          />{" "}
+                        </a>
                       </h6>
                     </div>
 
