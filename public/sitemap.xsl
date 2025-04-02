@@ -49,6 +49,7 @@
             color: #3498db;
             text-decoration: none;
           }
+          
           a:hover {
             text-decoration: underline;
           }
