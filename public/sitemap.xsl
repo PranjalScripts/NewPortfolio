@@ -4,8 +4,8 @@
     <html>
       <head>
         <title>XML Sitemap - PranjalDev</title>
-        <link rel="icon" href="/Pranjal.png" />
-        <link rel="apple-touch-icon" href="/Pranjal.png" />
+        <link rel="icon" href="Pranjal.png" />
+        <link rel="apple-touch-icon" href="Pranjal.png" />
         <style type="text/css">
           body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
