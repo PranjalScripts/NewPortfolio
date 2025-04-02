@@ -9,6 +9,8 @@ import ScrollToTop from "react-scroll-to-top";
 import { useTheme } from "./context/ThemeContext";
 import { Bounce } from "react-awesome-reveal";
 import MobileNav from "./components/MobileNav/MobileNav";
+import { HelmetProvider } from 'react-helmet-async';
+import SEO from './components/SEO';
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -16,8 +18,9 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   const [theme] = useTheme();
   return (
-    <>
+    <HelmetProvider>
       <div id={theme}>
+        <SEO />
         <ToastContainer />
         <MobileNav />
         <Layout />
@@ -40,7 +43,7 @@ function App() {
         color="#f29f67"
         style={{ backgroundColor: "#1e1e2c", borderRadius: "80px" }}
       />
-    </>
+    </HelmetProvider>
   );
 }
 
