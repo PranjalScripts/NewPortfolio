@@ -1,0 +1,8 @@
+{
+  "headers": [
+    {
+      "source": "/sitemap.xsl",
+      "headers": [{ "key": "Content-Type", "value": "text/xsl" }]
+    }
+  ]
+}
