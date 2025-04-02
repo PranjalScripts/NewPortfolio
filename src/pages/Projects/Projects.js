@@ -12,11 +12,17 @@ const Projects = () => {
           </h2>
           <hr />
           <p className="pb-3 text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia a
-            odit ab, eligendi cupiditate, minima quasi excepturi modi et quo
-            delectus, iusto dolor atque aliquam aspernatur eveniet! Ipsam eum
-            nobis omnis id voluptatibus quas eos maxime ipsum facere numquam,
-            voluptate qui et animi doloribus nulla eius molestiae unde tempore ad
+            I am a Full Stack Developer specializing in the MERN stack, database
+            management, and API integrations. My projects focus on building
+            scalable, high-performance applications that streamline business
+            operations. Notable work includes HisaabKaro, a digital ledger for
+            small businesses with smart invoicing and transaction approvals, and
+            India Educates CRM, a platform enhancing communication and workflow
+            efficiency. My portfolio website showcases my expertise in modern
+            web technologies. Through intuitive interfaces, real-time
+            notifications, and optimized databases, I create innovative
+            solutions that improve productivity and user experience across
+            industries. Let me know if you need any refinements!
           </p>
         </Bounce>
         {/* card design */}
